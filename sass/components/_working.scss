@@ -1,0 +1,43 @@
+.working__list {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.working__card {
+  min-width: 100%;
+  height: auto;
+  display: block;
+  background-color: var(--secondary-text-color);
+  &-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &-title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    width: 100%;
+    height: 70px;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section.working {
+    display: none;
+  }
+}
