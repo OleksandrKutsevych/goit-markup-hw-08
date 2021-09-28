@@ -2,14 +2,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  padding-bottom: 50px;
+  margin-bottom: 30px;
   & .list + .list {
     margin-bottom: 10px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
-  margin-bottom: -10px;
+  // margin-bottom: -10px;
 }
 
 .button-list .list:not(:last-child) {
